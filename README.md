@@ -10,6 +10,20 @@ alternative to using JavaScript’s eval function. There’s no security risk
 currently, because you can only run code in your own browser, but it’s not as
 convenient for math (`Math.pow(2, x)` instead of `2^x`, etc.).
 
+
+Getting Started
+----------------
+
+npm install kriffe/js-expression-eval --save
+
+
+    var Parser= require('js-expression-eval').Parser
+    var variables = {x:3};
+    var formula = "2 * x + 1";
+    var result = Parser.evaluate(formula,variables); 	//Output: 7
+
+
+
 Documentation (incomplete, of course)
 -------------------------------------
 
